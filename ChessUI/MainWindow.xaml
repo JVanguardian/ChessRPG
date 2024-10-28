@@ -8,7 +8,8 @@
         Title="ChessRPG" Width="600" SizeToContent="Height"
         Icon="Assets/icon.ico"
         WindowStartupLocation="CenterScreen"
-        Background="#101010">
+        Background="#101010"
+        KeyDown="Window_KeyDown">
     <Viewbox>
         <Grid x:Name="BoardGrid"
               Width="600"
@@ -22,7 +23,6 @@
             <UniformGrid x:Name="HighlightGrid"
                          Rows="8"
                          Columns="8">
-                
             </UniformGrid>
             
             <UniformGrid x:Name="PieceGrid"
@@ -31,6 +31,8 @@
                          RenderOptions.BitmapScalingMode="HighQuality">
                 
             </UniformGrid>
+
+            <ContentControl x:Name="MenuContainer"/>
         </Grid>
     </Viewbox>
 </Window>
