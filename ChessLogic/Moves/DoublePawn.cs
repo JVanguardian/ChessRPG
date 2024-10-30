@@ -5,8 +5,8 @@
         public override MoveType Type => MoveType.DoublePawn;
         public override Position FromPos { get; }
         public override Position ToPos { get; }
-
         private readonly Position skippedPos;
+
         public DoublePawn(Position from, Position to)
         {
             FromPos = from;
